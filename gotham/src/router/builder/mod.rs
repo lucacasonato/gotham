@@ -27,7 +27,9 @@ use crate::router::Router;
 pub use self::associated::{AssociatedRouteBuilder, AssociatedSingleRouteBuilder};
 pub use self::draw::DrawRoutes;
 pub use self::modify::{ExtendRouteMatcher, ReplacePathExtractor, ReplaceQueryStringExtractor};
+pub use self::single::AsyncHandlerFn;
 pub use self::single::DefineSingleRoute;
+pub use self::single::HandlerMarker;
 
 /// Builds a `Router` using the provided closure. Routes are defined using the `RouterBuilder`
 /// value passed to the closure, and the `Router` is constructed before returning.
